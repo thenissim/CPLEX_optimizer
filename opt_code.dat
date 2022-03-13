@@ -1,0 +1,28 @@
+/***************
+ * OPL 20.1.0.0 Data
+ * Author: User
+ * Creation Date: Apr 21, 2021 at 9:57:32 AM
+ ***************/
+SheetConnection sheet ("Group35.xlsx");
+T from SheetRead(sheet,"T");
+s_input from SheetRead(sheet,"s_input");
+s0_input from SheetRead(sheet,"s0_input");
+Pi_junior from SheetRead(sheet,"Pi_JUNIOR");
+Pi_senior from SheetRead(sheet,"Pi_SENIOR");
+CAPi from SheetRead(sheet,"CAPi");
+TRAINCOSTb from SheetRead(sheet,"TRAINCOSTb");
+TRAINCOSTc from SheetRead(sheet,"TRAINCOSTc");
+LAYOFFi from SheetRead(sheet,"LAYOFFi");
+OVERCOSTi from SheetRead(sheet,"OVERCOSTi");
+TEMPCOSTi from SheetRead(sheet,"TEMPCOSTi");
+TRAINLIMIT from SheetRead(sheet,"TRAINLIMIT");
+TRAINRATIO from SheetRead(sheet,"TRAINRATIO");
+ABAN from SheetRead(sheet,"ABAN");
+OVERLIMIT from SheetRead(sheet,"OVERLIMIT");
+TEMPLIMIT from SheetRead(sheet,"TEMPLIMIT");
+TEMPOUT from SheetRead(sheet,"TEMPOUT");
+
+M from SheetRead(sheet,"M"); //M הגדרת ביג 
+
+F to SheetWrite(sheet,"x_out"); //הדפסת תוצאות חלק א - K<=6
+MinF from SheetRead(sheet,"Fmin");/*שליפת תוצאת חלק א - K<=6*/
